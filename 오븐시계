@@ -1,0 +1,11 @@
+A, B = map(int, input().split())
+C = int(input())
+
+total = A * 60 + B
+total += C
+total %= 1440
+
+hour = total // 60
+minute = total % 60
+
+print(hour, minute)
